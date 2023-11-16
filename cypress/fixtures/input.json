@@ -1,0 +1,19 @@
+{
+  "username": "Admin",
+  "password": "admin123",
+  "title": "OrangeHRM",
+  "iusername":"dmin",
+  "ipassword":"admin12",
+  "text":"text",
+  "Dashboard":"Dashboard",
+  "myinfo":"My Info",
+  "enter":"{enter}",
+  "personaldetails":"Personal Details",
+  "fname":"ashwin",
+  "lname":"kumar",
+  "errmessage":"Required",
+  "exist":"exist",
+  "image":"SampleJPGImage_2mbmb.jpg",
+  "exist1":"exist"
+
+}

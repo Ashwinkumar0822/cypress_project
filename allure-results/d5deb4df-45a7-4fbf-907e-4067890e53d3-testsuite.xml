@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1700109735917' stop='1700109865858'>
+    <name>Project Test Suite</name>
+    <title>Project Test Suite</title>
+    <test-cases>
+        <test-case start='1700109735975' status='passed' stop='1700109759193'>
+            <name>1ValidLogin</name>
+            <title>1ValidLogin</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109759220' status='passed' stop='1700109768516'>
+            <name>2InValidLoginpage</name>
+            <title>2InValidLoginpage</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109768547' status='passed' stop='1700109776681'>
+            <name>3verify the ability to contain the home page tittle</name>
+            <title>3verify the ability to contain the home page tittle</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109776724' status='passed' stop='1700109786542'>
+            <name>4verify the ability to search the menu items in search bar</name>
+            <title>4verify the ability to search the menu items in search bar</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109786554' status='passed' stop='1700109797080'>
+            <name>5verify the personal details page is open</name>
+            <title>5verify the personal details page is open</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109797165' status='passed' stop='1700109809389'>
+            <name>6verify the personal detailspage is able to access and enter details</name>
+            <title>6verify the personal detailspage is able to access and enter details</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109809450' status='passed' stop='1700109829701'>
+            <name>7verify that the text box shows the error message</name>
+            <title>7verify that the text box shows the error message</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109829770' status='passed' stop='1700109842389'>
+            <name>8verify the profile image page hows the requier message while click the ave without add image</name>
+            <title>8verify the profile image page hows the requier message while click the ave without add image</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109842443' status='passed' stop='1700109850997'>
+            <name>9userdropdown</name>
+            <title>9userdropdown</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1700109851068' status='passed' stop='1700109865855'>
+            <name>10userdropdown</name>
+            <title>10userdropdown</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

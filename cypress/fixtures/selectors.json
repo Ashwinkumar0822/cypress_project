@@ -1,0 +1,21 @@
+{
+    "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "username": "input[placeholder='Username']",
+    "password": "input[placeholder='Password']",
+    "submit_button": "button[type='submit']",
+    "topbar":"div[class='oxd-topbar-header-title']",
+    "search":"nav[role='navigation'] input[placeholder='Search']",
+    "mainmenu":"nav[role='navigation'] a[class='oxd-main-menu-item']",
+    "personaltitle":"div>a[class='orangehrm-tabs-item --active']",
+    "fname":"input[placeholder='First Name']",
+    "lsname":"input[placeholder='Last Name']",
+    "errmessage":"div>span[class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']",
+    "empimage":"div>img[class='employee-image']",
+    "empimgadd":"div>button[class='oxd-icon-button oxd-icon-button--solid-main employee-image-action']",
+    "savebutton":"button[class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']",
+    "err":"div>span[class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']",
+    "userdropdown":"li[class='oxd-userdropdown'] span i",
+    "usericon":"i[class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']",
+    "logout":":nth-child(4) > .oxd-userdropdown-link"
+    
+  }
