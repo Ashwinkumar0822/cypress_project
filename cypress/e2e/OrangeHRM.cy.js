@@ -19,49 +19,49 @@ describe('Project Test Suite', () => {
       obj.landingpage(selectors , input);
   });
 
-  it('1ValidLogin', () => {
+  it('1:ValidLogin', () => {
       cy.ValidLogin(selectors , input);
   });
-  it('2InValidLoginpage', () => {    
+  it('2:InValidLoginpage', () => {    
     cy.InValidLogin(selectors , input);
   });
-  it('3verify the ability to contain the home page tittle', () => {  
+  it('3:verify the ability to contain the home page tittle', () => {  
     cy.ValidLogin(selectors , input);  
     cy.HomepageTitle(selectors , input);
   });
-  it('4verify the ability to search the menu items in search bar', () => {  
+  it('4:verify the ability to search the menu items in search bar', () => {  
     cy.ValidLogin(selectors , input); 
     cy.search(selectors , input); 
   });
-  it('5verify the personal details page is open', () => {  
+  it('5:verify the personal details page is open', () => {  
     cy.ValidLogin(selectors , input); 
     cy.search(selectors , input); 
     cy.personaldetails(selectors , input);
   });
-  it('6verify the personal detailspage is able to access and enter details', () => {  
+  it('6:verify the personal detailspage is able to access and enter details', () => {  
     cy.ValidLogin(selectors , input); 
     cy.search(selectors , input); 
     cy.personaldetailsData(selectors , input);
   });
-  it('7verify that the text box shows the error message', () => {  
+  it('7:verify that the text box shows the error message', () => {  
     cy.ValidLogin(selectors , input); 
     cy.search(selectors , input); 
     //cy.personaldetailsData(selectors , input);
     
     cy.errormessageRequired(selectors , input);
   });
-  it('8verify the profile image page hows the requier message while click the ave without add image', () => {  
+  it('8:verify the profile image page hows the requier message while click the ave without add image', () => {  
     cy.ValidLogin(selectors , input); 
     cy.search(selectors , input);
     cy.personaldetails(selectors , input); 
     cy.profilepictureRequired(selectors , input);
   });
-  it('9userdropdown',()=>{
+  it('9:Ensure that the userdropdown is available to see the dropdown lists',()=>{
     cy.ValidLogin(selectors , input);
     cy.userdropdown(selectors , input);
 
   });
-  it('10userdropdown',()=>{
+  it('10:verifying the logout button is workin and the page is logged out ',()=>{
     cy.ValidLogin(selectors , input);
     cy.logoutfunction(selectors , input);
 
