@@ -25,26 +25,21 @@ Cypress.Commands.add('personaldetails', (selectors, input) => {
 Cypress.Commands.add('personaldetailsData', (selectors, input) => { //checking the my info page is able to fill in data's
     cy.get(selectors.fname).click().clear().type(input.fname)
     cy.get(selectors.lsname).click().clear().type(input.lname)
-})
- 
+}) 
 Cypress.Commands.add('errormessageRequired', (selectors, input) => {
     cy.wait(10000)
     cy.get(selectors.fname).click().clear()
     cy.get(selectors.errmessage).invoke(input.text).should('contains',input.errmessage)
     })
-
- 
 Cypress.Commands.add('profilepictureRequired', (selectors, input) => {
     cy.get(selectors.empimage).click( )
     cy.get(selectors.savebutton).click()
     cy.get(selectors.err).invoke(input.text).should('contains',input.errmessage)
 })
- 
 Cypress.Commands.add('userdropdown', (selectors, input) => {
     //verifying the user drpdown is existnpm uninstall cypress
     cy.get(selectors.userdropdown).should(input.exist1)
 })
- 
 Cypress.Commands.add('logoutfunction', (selectors) => {
     //verifying the user drpdown is exist
     cy.get(selectors.usericon).click()
