@@ -1,37 +1,27 @@
-// import cypress from 'cypress';
-// import 'cypress-file-upload'
- 
-Cypress.Commands.add('ValidLogin', (selectors, input) => {
+ Cypress.Commands.add('ValidLogin', (selectors, input) => {
     cy.get(selectors.username).type(input.username)
     cy.get(selectors.password).type(input.password)
     cy.get(selectors.submit_button).click({ timeout: 2000 }, { force: true })
-})
- 
+}) 
 Cypress.Commands.add('InValidLogin', (selectors, input) => {
     cy.get(selectors.username).type(input.iusername)
     cy.get(selectors.password).type(input.ipassword)
     cy.get(selectors.submit_button).click({ timeout: 2000 }, { force: true })
 })
- 
 Cypress.Commands.add('HomepageTitle', (selectors, input) => {
     //checking thheader title dashboard
     cy.get(selectors.topbar).invoke(input.text).should('contains', input.Dashboard)
-})
- 
+}) 
 Cypress.Commands.add('search', (selectors, input) => {
     //checking the search bar is working
     cy.get(selectors.search).click().type(input.myinfo).type(input.enter).then(() => {
         cy.get(selectors.mainmenu).click()
-        // cy.wait(5000)
-    })
-})
- 
+            })
+}) 
 Cypress.Commands.add('personaldetails', (selectors, input) => {
 // search
     cy.get(selectors.personaltitle).invoke(input.text).should('contains',input.personaldetails)
-
 })
- 
 Cypress.Commands.add('personaldetailsData', (selectors, input) => { //checking the my info page is able to fill in data's
     cy.get(selectors.fname).click().clear().type(input.fname)
     cy.get(selectors.lsname).click().clear().type(input.lname)
