@@ -3,7 +3,6 @@ import landing from '/cypresspro/cypress/features/landingpage.js'
 
 describe('Project Test Suite', () => {
   let input, selectors;
-
   before(() => {
       cy.fixture('input.json').then((data) => {
           input = data;
@@ -12,13 +11,10 @@ describe('Project Test Suite', () => {
           selectors = data1; // Corrected variable assignment
       });
   });
-
   const obj = new landing(); // Assuming 'Landing' is the correct class or object name
-
   beforeEach(() => {
       obj.landingpage(selectors , input);
   });
-
   it('1:ValidLogin', () => {
       cy.ValidLogin(selectors , input);
   });
@@ -45,9 +41,7 @@ describe('Project Test Suite', () => {
   });
   it('7:verify that the text box shows the error message', () => {  
     cy.ValidLogin(selectors , input); 
-    cy.search(selectors , input); 
-    //cy.personaldetailsData(selectors , input);
-    
+    cy.search(selectors , input);     
     cy.errormessageRequired(selectors , input);
   });
   it('8:verify the profile image page hows the requier message while click the ave without add image', () => {  
@@ -59,11 +53,9 @@ describe('Project Test Suite', () => {
   it('9:Ensure that the userdropdown is available to see the dropdown lists',()=>{
     cy.ValidLogin(selectors , input);
     cy.userdropdown(selectors , input);
-
   });
   it('10:verifying the logout button is workin and the page is logged out ',()=>{
     cy.ValidLogin(selectors , input);
     cy.logoutfunction(selectors , input);
-
   });
 });
